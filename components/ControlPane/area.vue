@@ -11,6 +11,7 @@ const props = defineProps<{
   <div p-3 class="area-body" rounded="xl">
     <slot />
   </div>
+  <div i-mdi-triangle-down-outline text="#54736e" mx-auto />
 </template>
 
 <style scoped>
