@@ -1,6 +1,6 @@
 ### Nuxt3 Template
 
-<img src="./demo.png" />
+<img src="./demo.png" border />
 
 ### Preview
 
