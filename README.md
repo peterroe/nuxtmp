@@ -6,6 +6,12 @@
 
 [https://nuxtmp.vercel.app](https://nuxtmp.vercel.app/)
 
+### Usage
+
+```shell
+$ npx degit peterroe/nuxtmp nuxt-project
+```
+
 ### Feature
 
 * [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3)
