@@ -21,13 +21,6 @@
         <div>Share</div>
       </div>
     </div>
-    <!-- <div
-      class="person-account"
-      border="1px solid gray"
-    >
-      <div i-mdi-account text-md mr-2 text-2xl />
-      peterroe
-    </div> -->
   </div>
 </template>
 
