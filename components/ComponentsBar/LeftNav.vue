@@ -26,8 +26,8 @@ const menuList: MenuItem[] = [
     title: 'Other',
   },
 ]
-const handeClickItem = (item: MenuItem) => {
-  console.log(item.title)
+const handleClickItem = (item: MenuItem) => {
+  currenFocus.value = item.title
 }
 
 const handleClickIcon = () => {
@@ -36,22 +36,20 @@ const handleClickIcon = () => {
 </script>
 
 <template>
-  <div text-center class="left-nav">
+  <div text-center flex flex-col justify-between bg-var-white>
     <ul>
       <li
         v-for="item in menuList"
         :key="item.icon"
         text-center
-        m-4
-        py-1
-        mx-1
-        hover="bg-#3e756e text-#fdfdfd"
+        m-4 py-1 mx-1
+        hover="bg-var-green text-var-white"
         :class="{
-          'bg-#3e756e text-#fdfdfd': currenFocus === item.title,
+          'bg-var-green text-var-white': currenFocus === item.title,
         }"
         cursor-pointer
         rounded
-        @click="handeClickItem(item)"
+        @click="handleClickItem(item)"
       >
         <div my-2 mx-auto text-lg :class="item.icon" />
         <div text-xs>
@@ -59,16 +57,12 @@ const handleClickIcon = () => {
         </div>
       </li>
     </ul>
-    <div flex justify-center py-2 cursor-pointer hover="text-#4b746e">
+    <div flex justify-center py-2 cursor-pointer hover="text-var-green">
       <div text-3xl i-mdi-github @click="handleClickIcon" />
     </div>
   </div>
 </template>
 
 <style scoped>
-.left-nav {
-  background-color: #fdfdfd;
-  @apply
-    flex flex-col justify-between
-}
+
 </style>

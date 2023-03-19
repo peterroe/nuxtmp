@@ -17,7 +17,7 @@ const handleClickIcon = () => {
     text-stroke-1
     items-center
     justify-center
-    class="editor"
+    bg-var-white
   >
     Create whatever you want here...
     <div mt-10 flex items-center>
@@ -34,7 +34,5 @@ const handleClickIcon = () => {
 </template>
 
 <style scoped>
-.editor {
-  background-color: #fdfdfd
-}
+
 </style>

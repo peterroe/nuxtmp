@@ -16,15 +16,12 @@ const props = defineProps<{
 
 <style scoped>
 .area {
-  /* background-color: #e76f51; */
   color: #4b746e;
   border-top: 1px dashed #4b746e;
   @apply
     font-bold pt-4 my-4 h-8 px-2 leading-8  rounded-xl
     text-left text-lg
     flex items-center
-}
-.area-body {
-  /* border-bottom: 1px solid #f4a261; */
+    color-#4b746e
 }
 </style>

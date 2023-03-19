@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// const { data } = await useFetch('/api/pageview')
 import { NConfigProvider } from 'naive-ui'
 </script>
 

@@ -7,7 +7,7 @@ import { NInput } from 'naive-ui'
     <div
       b-b="1px solid #ddd"
       h-14 flex items-center py-3 pr-3
-      class="component-bar"
+      bg-var-white
     >
       <div w-16>
         Demo
@@ -22,7 +22,7 @@ import { NInput } from 'naive-ui'
         </NInput>
       </div>
     </div>
-    <div class="bar-height" w-75 flex>
+    <div class="bar-height">
       <ComponentsBarLeftNav w-15 />
       <ComponentsBarRightList flex-1 />
     </div>
@@ -32,8 +32,6 @@ import { NInput } from 'naive-ui'
 <style scoped>
 .bar-height {
   height: calc(100vh - 6.5rem);
-}
-.component-bar {
-  background-color: #fdfdfd
+  @apply w-75 flex
 }
 </style>
