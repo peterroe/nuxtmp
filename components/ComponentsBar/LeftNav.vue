@@ -27,7 +27,11 @@ const menuList: MenuItem[] = [
   },
 ]
 const handeClickItem = (item: MenuItem) => {
-  currenFocus.value = item.title
+  console.log(item.title)
+}
+
+const handleClickIcon = () => {
+  window.open('https://github.com/peterroe/nuxtmp')
 }
 </script>
 
@@ -56,7 +60,7 @@ const handeClickItem = (item: MenuItem) => {
       </li>
     </ul>
     <div flex justify-center py-2 cursor-pointer hover="text-#4b746e">
-      <div text-3xl i-mdi-github />
+      <div text-3xl i-mdi-github @click="handleClickIcon" />
     </div>
   </div>
 </template>
