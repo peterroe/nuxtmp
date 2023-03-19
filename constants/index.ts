@@ -1,2 +1,2 @@
-export const appName = 'Jimu'
-export const appDescription = 'Jimu for zero code'
+export const appName = 'Nuxtmp'
+export const appDescription = 'Nuxtmp for Nuxt3 template'
